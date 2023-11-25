@@ -19,9 +19,6 @@ all : $(NAME)
 $(NAME) : $(OBJS)
 	ar -rc $(NAME) $(OBJS)
 
-$(OBJS) : $(SRCS)
-	$(CC) -c $(SRCS)
-
 clean : 
 	rm -f $(OBJS)
 

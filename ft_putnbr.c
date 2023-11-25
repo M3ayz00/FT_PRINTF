@@ -6,15 +6,15 @@
 /*   By: msaadidi <msaadidi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/23 15:54:09 by msaadidi          #+#    #+#             */
-/*   Updated: 2023/11/23 20:36:04 by msaadidi         ###   ########.fr       */
+/*   Updated: 2023/11/25 18:30:05 by msaadidi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int calcul(long n)
+int	calcul(long n)
 {
-	int count;
+	int	count;
 
 	count = 0;
 	if (n == 0)
@@ -32,7 +32,7 @@ int calcul(long n)
 	return (count);
 }
 
-int ft_putnbr(long nb)
+int	ft_putnbr(long nb)
 {
 	char	c;
 

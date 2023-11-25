@@ -6,13 +6,13 @@
 /*   By: msaadidi <msaadidi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/23 17:08:03 by msaadidi          #+#    #+#             */
-/*   Updated: 2023/11/23 19:48:03 by msaadidi         ###   ########.fr       */
+/*   Updated: 2023/11/25 18:25:57 by msaadidi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_puthexa(long nb, char c)
+int	ft_puthexa(unsigned int nb, char c)
 {
 	char	*hexa;
 
