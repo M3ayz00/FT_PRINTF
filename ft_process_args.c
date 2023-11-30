@@ -6,7 +6,7 @@
 /*   By: msaadidi <msaadidi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 23:17:25 by msaadidi          #+#    #+#             */
-/*   Updated: 2023/11/25 18:29:27 by msaadidi         ###   ########.fr       */
+/*   Updated: 2023/11/30 17:26:46 by msaadidi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,7 @@ int	ft_process_args(va_list arg, char c)
 	}
 	else if (c == 'p')
 	{
-		if ((void *)(va_arg(arg, unsigned long long)) == (void *)0)
-			return (ft_putstr("(nil)"));
-		count = ft_putstr("0x");
-		count += ft_putadr(va_arg(arg, unsigned long long));
+		count += check_pointer(va_arg(arg, unsigned long));
 	}
 	else if (c == 'd' || c == 'i')
 		count = ft_putnbr(va_arg(arg, int));

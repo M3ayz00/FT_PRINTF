@@ -6,7 +6,7 @@
 /*   By: msaadidi <msaadidi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/23 14:01:27 by msaadidi          #+#    #+#             */
-/*   Updated: 2023/11/25 18:27:21 by msaadidi         ###   ########.fr       */
+/*   Updated: 2023/11/30 17:36:18 by msaadidi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,16 @@
 
 int	ft_putstr(char *s)
 {
-	int	c;
+	int	count;
 
-	c = 0;
+	count = 0;
 	if (!s)
 		return (ft_putstr("(null)"));
-	c = ft_strlen(s);
+	count = ft_strlen(s);
 	while (*s)
 	{
 		write(1, s, 1);
 		s++;
 	}
-	return (c);
+	return (count);
 }

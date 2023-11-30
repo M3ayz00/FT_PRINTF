@@ -6,7 +6,7 @@
 /*   By: msaadidi <msaadidi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/23 19:26:41 by msaadidi          #+#    #+#             */
-/*   Updated: 2023/11/25 18:30:27 by msaadidi         ###   ########.fr       */
+/*   Updated: 2023/11/30 17:30:21 by msaadidi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,11 @@
 
 int	ft_putunbr(unsigned int n)
 {
-	char	c;
+	int	count;
 
+	count = 0;
 	if (n > 9)
-	{
-		ft_putnbr(n / 10);
-		ft_putnbr(n % 10);
-	}
-	else
-	{
-		c = n + '0';
-		write(1, &c, 1);
-	}
-	return (calcul(n));
+		count += ft_putnbr(n / 10);
+	count += ft_putchar(n % 10 + '0');
+	return (count);
 }
