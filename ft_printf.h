@@ -6,7 +6,7 @@
 /*   By: msaadidi <msaadidi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/25 18:28:23 by msaadidi          #+#    #+#             */
-/*   Updated: 2023/11/30 17:30:34 by msaadidi         ###   ########.fr       */
+/*   Updated: 2023/12/25 14:20:35 by msaadidi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,6 @@ int		ft_putadr(unsigned long n);
 int		ft_putnbr(long n);
 int		ft_putunbr(unsigned int n);
 int		ft_process_args(va_list arg, char c);
-void	*ft_memcpy(void *dest, const void *src, size_t n);
 char	*ft_strchr(const char *str, int c);
 int		check_pointer(unsigned long n);
 
